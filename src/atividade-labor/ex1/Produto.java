@@ -1,5 +1,3 @@
-package ex2;
-
 public class Produto {
     private int codigo;
     private String nome;
