@@ -1,3 +1,5 @@
+package ex2;
+
 public class Produto {
     private static int proximoCodigo = 1;
     private int codigo;
