@@ -1,5 +1,3 @@
-package atividade_heran;
-
 import java.util.ArrayList;
 
 class Pessoa {
