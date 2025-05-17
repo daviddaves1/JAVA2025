@@ -1,5 +1,4 @@
 public class ContaCorrente extends Conta {
-
     private static final double TAXA = 0.05;
 
     public ContaCorrente(int numero, Cliente dono) {
@@ -8,12 +7,12 @@ public class ContaCorrente extends Conta {
 
     @Override
     public void sacar(double valor) {
-        saldo -= (valor + TAXA);
+        super.sacar(valor + TAXA);
     }
 
     @Override
     public void depositar(double valor) {
-        saldo += (valor - TAXA);
+        super.depositar(valor - TAXA);
     }
 
     @Override
