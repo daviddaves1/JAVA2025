@@ -7,12 +7,12 @@ public class ContaSalario extends ContaCorrente {
 
     @Override
     public void sacar(double valor) {
-        saldo -= (valor + TAXA);
+        saldo -= (valor+TAXA);
     }
 
     @Override
     public void depositar(double valor) {
-        saldo += (valor - TAXA);
+        saldo += (valor-TAXA);
     }
 
     @Override

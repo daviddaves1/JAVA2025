@@ -5,7 +5,7 @@ public class ContaPoupanca extends Conta {
     }
 
     public void atualizaSaldo(double percentual) {
-        saldo += saldo * percentual / 100;
+        saldo += saldo * percentual/100;
     }
 
     @Override
