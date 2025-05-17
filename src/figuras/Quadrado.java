@@ -1,5 +1,3 @@
-package figuras;
-
 public class Quadrado extends Figura implements Desenho {
     private double lado;
 

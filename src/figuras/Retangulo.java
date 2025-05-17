@@ -1,5 +1,3 @@
-package figuras;
-
 public class Retangulo extends Figura implements Desenho {
     private double base;
     private double altura;

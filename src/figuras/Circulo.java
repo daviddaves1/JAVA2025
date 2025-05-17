@@ -1,5 +1,3 @@
-package figuras;
-
 public class Circulo extends Figura implements Desenho {
     private double raio;
 

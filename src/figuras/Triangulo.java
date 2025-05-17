@@ -1,5 +1,3 @@
-package figuras;
-
 public class Triangulo extends Figura implements Desenho {
     private double base;
     private double lado1;
