@@ -1,9 +1,9 @@
-public class Quadrado extends Figura implements Desenho {
-    protected double lado;
+package figuras;
 
-    public Quadrado() {
-        this.lado = 0;
-    }
+public class Quadrado extends Figura implements Desenho {
+    private double lado;
+
+    public Quadrado() {}
 
     public Quadrado(double lado) {
         this.lado = lado;
@@ -29,6 +29,6 @@ public class Quadrado extends Figura implements Desenho {
 
     @Override
     public String desenhar() {
-        return "Desenhando a Figura Quadrado";
+        return "Desenhando a Figura Quadrado.";
     }
 }

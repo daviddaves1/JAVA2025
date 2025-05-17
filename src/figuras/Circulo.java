@@ -1,9 +1,9 @@
+package figuras;
+
 public class Circulo extends Figura implements Desenho {
     private double raio;
 
-    public Circulo() {
-        this.raio = 0;
-    }
+    public Circulo() {}
 
     public Circulo(double raio) {
         this.raio = raio;
@@ -29,6 +29,6 @@ public class Circulo extends Figura implements Desenho {
 
     @Override
     public String desenhar() {
-        return "Desenhando a Figura Círculo";
+        return "Desenhando a Figura Círculo.";
     }
 }

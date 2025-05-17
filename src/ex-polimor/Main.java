@@ -1,4 +1,4 @@
-public class TestaConta {
+public class Main {
     public static void main(String[] args) {
         Conta c1 = new ContaCorrente(1, new Cliente("João", "9999-9999"));
         Conta c2 = new ContaPoupanca(2, new Cliente("Maria", "8888-8888"));

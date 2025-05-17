@@ -1,9 +1,12 @@
-public class Triangulo extends Figura implements Desenho {
-    private double base, lado1, lado2, altura;
+package figuras;
 
-    public Triangulo() {
-        base = lado1 = lado2 = altura = 0;
-    }
+public class Triangulo extends Figura implements Desenho {
+    private double base;
+    private double lado1;
+    private double lado2;
+    private double altura;
+
+    public Triangulo() {}
 
     public Triangulo(double base, double lado1, double lado2, double altura) {
         this.base = base;
@@ -16,28 +19,28 @@ public class Triangulo extends Figura implements Desenho {
         return base;
     }
 
-    public double getLado1() {
-        return lado1;
-    }
-
-    public double getLado2() {
-        return lado2;
-    }
-
-    public double getAltura() {
-        return altura;
-    }
-
     public void setBase(double base) {
         this.base = base;
+    }
+
+    public double getLado1() {
+        return lado1;
     }
 
     public void setLado1(double lado1) {
         this.lado1 = lado1;
     }
 
+    public double getLado2() {
+        return lado2;
+    }
+
     public void setLado2(double lado2) {
         this.lado2 = lado2;
+    }
+
+    public double getAltura() {
+        return altura;
     }
 
     public void setAltura(double altura) {
@@ -56,6 +59,6 @@ public class Triangulo extends Figura implements Desenho {
 
     @Override
     public String desenhar() {
-        return "Desenhando a Figura Triângulo";
+        return "Desenhando a Figura Triângulo.";
     }
 }
