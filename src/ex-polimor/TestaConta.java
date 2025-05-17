@@ -11,20 +11,17 @@ public class TestaConta {
         c2.sacar(50);
         System.out.println(c2);
 
-        // Atualiza saldo da poupança
         if (c2 instanceof ContaPoupanca) {
             ((ContaPoupanca) c2).atualizaSaldo(5);
         }
         System.out.println("Após atualização de saldo:");
         System.out.println(c2);
 
-        // Transferência
         c1.transferir(30, c2);
         System.out.println("Após transferência:");
         System.out.println(c1);
         System.out.println(c2);
 
-        // Conta Salário
         ContaSalario cs = new ContaSalario(3, new Cliente("Carlos", "7777-7777"));
         cs.depositar(100);
         cs.sacar(10);

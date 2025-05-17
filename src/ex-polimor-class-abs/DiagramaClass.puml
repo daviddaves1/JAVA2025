@@ -1,0 +1,73 @@
+@startuml
+interface Desenho {
+    +desenhar(): String
+}
+
+abstract class Figura {
+    +calcularArea(): double
+    +calcularPerimetro(): double
+}
+
+class Quadrado {
+    -lado: double
+    +Quadrado()
+    +Quadrado(lado: double)
+    +getLado(): double
+    +setLado(lado: double): void
+    +calcularArea(): double
+    +calcularPerimetro(): double
+    +desenhar(): String
+}
+
+class Retangulo {
+    -altura: double
+    +Retangulo()
+    +Retangulo(lado: double, altura: double)
+    +getAltura(): double
+    +setAltura(altura: double): void
+    +calcularArea(): double
+    +calcularPerimetro(): double
+    +desenhar(): String
+}
+
+class Triangulo {
+    -base: double
+    -lado1: double
+    -lado2: double
+    -altura: double
+    +Triangulo()
+    +Triangulo(base: double, lado1: double, lado2: double, altura: double)
+    +getBase(): double
+    +getLado1(): double
+    +getLado2(): double
+    +getAltura(): double
+    +setBase(double): void
+    +setLado1(double): void
+    +setLado2(double): void
+    +setAltura(double): void
+    +calcularArea(): double
+    +calcularPerimetro(): double
+    +desenhar(): String
+}
+
+class Circulo {
+    -raio: double
+    +Circulo()
+    +Circulo(raio: double)
+    +getRaio(): double
+    +setRaio(raio: double): void
+    +calcularArea(): double
+    +calcularPerimetro(): double
+    +desenhar(): String
+}
+
+Figura <|-- Quadrado
+Figura <|-- Triangulo
+Figura <|-- Circulo
+Quadrado <|-- Retangulo
+
+Desenho <|.. Quadrado
+Desenho <|.. Retangulo
+Desenho <|.. Circulo
+Desenho <|.. Triangulo
+@enduml
